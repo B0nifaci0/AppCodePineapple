@@ -15,15 +15,8 @@ import { createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 //importamos la libreria iconos
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 import { HomeStack } from '../codeBlog54/src/navigator/stacks/HomeStack';
+import { CategoriesStack } from '../codeBlog54/src/navigator/stacks/CategoriesStack';
 
-/* FUNCION DE NUESTRA PANTALLA DE Categorias */
-function CategoriesScreen(){
-  return(
-    <View style={{flex:1, justifyContent: 'center' ,alignItems: 'center', backgroundColor: "yellow"}}>
-      <Text>PANTALLA DE CATEGORIAS</Text>
-    </View>
-  );
-}
 /* FUNCION DE NUESTRA PANTALLA DE POst */
 function PostScreen(){
   return(
@@ -54,7 +47,7 @@ export default function App(){
             ),
           }}
           />
-          <Tab.Screen name="Categorias" component={CategoriesScreen} 
+          <Tab.Screen name="Categorias" component={CategoriesStack} 
             options={{
               tabBarIcon: ({ color, size }) => (
                 <MaterialCommunityIcons name="new-box" color={'#F32A64'} size={35} />
