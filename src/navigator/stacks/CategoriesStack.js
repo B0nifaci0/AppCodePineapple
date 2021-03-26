@@ -8,7 +8,7 @@ const Stack = createStackNavigator();
 export const  CategoriesStack = () =>{
     return(
         <Stack.Navigator>
-            <Stack.Screen name="categorias" component={CategoriesScreen} />
+            <Stack.Screen name="Categorias >" component={CategoriesScreen} />
         </Stack.Navigator>
     );
 }
