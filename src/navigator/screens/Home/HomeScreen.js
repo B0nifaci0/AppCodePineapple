@@ -1,6 +1,6 @@
 import * as React from 'react';
 import {Text, View,StyleSheet} from 'react-native';
-
+import ComponentSlider from '../../../components/Slider/ComponentSlider'
  /* Declaración De Nuestro función Home Screenjs */
 export default function HomeScreen(){
 
@@ -10,7 +10,9 @@ export default function HomeScreen(){
       // Try setting `flexDirection` to `"row"`.
       flexDirection: "column"}]}>
       {/* V-SLIDER */}
-      <View style={{ flex: 1, backgroundColor: "red", justifyContent:"center",}}><Text>Slider</Text></View>
+      <ComponentSlider/>
+      {/* <View style={{ flex: 1, backgroundColor: "red", justifyContent:"center",}}><Text>Slider</Text></View>
+       */}
       {/* VISTA CATEGORI 1 */}
       <Text>V2-Base De Datos</Text>
       <View style={{flex:1, backgroundColor:"darkorange", justifyContent:"center", flexDirection:"row", alignItems:"center"}}>
